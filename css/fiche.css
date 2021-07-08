@@ -1,0 +1,286 @@
+body {
+    background:#000;
+    font-family:'Nunito', sans-serif;
+}
+
+.container {
+    max-width:1420px;
+}
+
+/* HEADER */ 
+
+.header-body {
+    background:#303030;
+    padding:1rem 1rem 4rem 1rem;
+    margin-top:1rem;
+}
+
+#menu {
+    margin:auto;
+}
+
+.menu-principal {
+    margin:auto;
+    margin-top:1rem;
+}
+
+.menu-principal li a {
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:normal;
+    padding:0.8rem 2rem;
+    text-transform:uppercase;
+}
+
+.menu-principal li a:hover {
+    background:#e57b19;
+    color:#fff;
+    text-decoration:none;
+    border-radius:1.6rem;
+}
+
+.div-logo {
+    padding-left:5rem;
+    padding-bottom:2rem;
+}
+
+
+
+/* HEADER */ 
+
+
+
+/* MOVIE DESCRIPTION */
+    
+
+#movie-description .container {
+    background:#303030;
+    padding-top:4rem;
+    padding-bottom:4rem;
+    color:#fff;
+}
+
+#movie-description h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height:3.2rem;
+}
+
+#movie-description h2 {
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform:capitalize;
+}
+
+#movie-description h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height:1.6rem;
+    margin-bottom:2rem;
+}
+
+#movie-description .movie-img img {
+    width:70%;
+    display:block;
+    margin:auto;
+}
+
+.movie-year {
+    font-size:1.8rem;
+}
+
+.btn-favoris {
+    background:#e57b19;
+    color:#fff;
+    text-decoration:none;
+    border-radius:1.6rem;
+    padding:0.8rem 1.2rem;
+}
+
+.btn-favoris img {
+    width:2rem;
+    margin-top:-0.3rem;
+}
+
+.btn-favoris:hover {
+    background:rgba(229,123,25,0.8);
+    cursor:pointer;
+}
+
+.synopsis {
+    width:60%;
+}
+
+.movie-score, .movie-characters {
+    padding-top:2rem;
+}
+
+.movie-score {
+    padding-left:5rem;
+}
+
+.movie-score img {
+    width:3.5rem;
+    margin-top:-0.8rem;
+}
+
+.score {
+    font-size: 1.5rem !important;
+    margin-top: 2rem;
+    margin-bottom:2.5rem;
+}
+
+.slash {
+    padding:0rem 0.4rem;
+}
+
+.movie-score p {
+    font-size:1rem;
+    line-height:1rem;
+}
+
+.movie-characters ul {
+    list-style-type:none;
+    padding-inline-start:0;
+}
+
+.movie-characters ul li {
+    display:inline-block;
+    text-align:center;
+}
+
+.movie-characters img {
+    width:10rem;
+}
+
+/* MOVIE DESCRIPTION */
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1256px) {
+    .movie-characters img {
+        width:8rem;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    #movie-description h1 {
+        font-size:2rem;
+        line-height:2.2rem;
+    }
+    
+    .div-logo {
+        text-align:center;
+    }
+    
+    .synopsis {
+        width:90%;
+    }
+    
+    #movie-description .movie-img img {
+        width:75%;
+    }
+  
+    .movie-score, .div-logo  {
+        padding-left: 3rem;
+    }
+    
+    .movie-characters ul li {
+        padding:1rem;
+    }
+    
+    .movie-characters img {
+        width:7rem;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    
+    .div-logo a {
+        display:inline-block;
+    }
+    
+    .logo {
+        position: relative;
+        margin: auto;
+        display: inline-block;
+    }
+    
+    #menu {
+        margin: auto;
+        position: absolute;
+        top: 1rem;
+        display: block;
+        width: 100%;
+        padding:1rem;
+    }
+    
+    #menu .menu-principal {
+        background:#303030;
+        border-bottom:#e57b19 solid 0.5rem;
+        padding:1rem;
+        z-index:1;
+        text-align: center;
+        position: relative;
+    }
+    
+    #menu .menu-principal li {
+        margin-bottom:1rem;
+    }
+    
+    #menu button {
+        background:#fff;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .div-logo {
+        padding-left:2rem;    
+    }
+    
+    .movie-score {
+        padding-left: 1rem;
+        text-align:center;
+    }
+    
+    .movie-characters {
+        text-align:center;
+    }
+    
+    #movie-description h2, .synopsis, .movie-year, #movie-description h1 {
+        text-align:center;
+    }
+    
+    .synopsis {
+        width:100%;
+        padding:1rem;
+    }
+    
+    .btn-favoris {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: max-content;
+    }
+   
+    .movie-img {
+        margin-bottom:2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .logo {
+        padding: 0rem 0rem 0rem 3rem;
+    }
+}

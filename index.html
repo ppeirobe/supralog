@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SupraCine</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+        <link href="http://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+        
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    </head>
+
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="60">
+        <header id="header">
+            <div class="container header-body">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <img class="logo" src="images/supracine-logo.png" alt="SupraCine">
+                    </div>
+                </div>
+                <div class="row">
+                     <nav id="menu" class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                                    <ion-icon name="menu"></ion-icon>
+                                </button>
+                            </div>
+                            <div id="myNavbar" class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav menu-principal">
+                                    <li><a href="#home">Accueil</a></li>
+                                    <li><a href="#movie">Films</a></li>
+                                    <li><a href="#serie">Séries</a></li>
+                                    <li><a href="#news">Actualités</a></li>
+                                    <li><a href="#account">Mon compte</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <section id="research-form">
+            <div class="container research-form-body">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <form id="formulaire" role="form" method="">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3 col-12 div-label">
+                                    <label for="name">Name</label><br />
+                                    <input id="name" type="text" name="name" class="control-form" placeholder="" value="">  
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-12 div-label">
+                                    <label for="year">Year</label><br />
+                                    <input id="year" type="date" name="year" class="control-form" placeholder="" value="">  
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-12 div-label">
+                                    <label for="type">Type</label><br />
+                                    <select name="type" id="type">
+                                        <option value="">Choisissez</option>
+                                        <option value="animated">Animated movie</option>
+                                        <option value="cartoon">Cartoon</option>
+                                        <option value="movie">Movie</option>
+                                    </select> 
+                                </div>
+                                 <div class="col-md-3 col-sm-3 col-12">
+                                    <input type="reset" value="X">
+                                    <input type="submit" class="btn-submit" value="Search">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="movies">
+            <div class="container movies-container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body iceman">
+                        <a href="fiche-iceman.html">
+                            <img src="images/iceman.png" alt="Iceman">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Iceman</span><br />
+                                    2017
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body andres">
+                        <a href="fiche-andres.html">
+                        <img src="images/andres.jpg" alt="Andres">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Andres</span><br />
+                                    2018
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body halloween-hero">
+                        <a href="fiche-halloween-hero.html">
+                            <img src="images/halloween.jpg" alt="Halloween Hero">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Halloween Hero</span><br />
+                                    2014
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body christmas">
+                        <a href="fiche-a-christmas-hero.html">
+                            <img src="images/christmas-hero.jpg" alt="A christmas hero">
+                            <div class="movie-title">
+                                <p>
+                                    <span>A christmas hero</span><br />
+                                    2001
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body andres">
+                        <a href="fiche-andres.html">
+                            <img src="images/andres.jpg" alt="Andres">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Andres</span><br />
+                                    2018
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body monkie">
+                        <a href="fiche-monkie-kid.html">
+                            <img src="images/monkie.jpg" alt="Monkie Kid">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Monkie Kid</span><br />
+                                    2011
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body ni-heroe">
+                        <a href="fiche-ni-heroe-ni-traidor.html">
+                            <img src="images/ni-heroe-ni-traidor.jpg" alt="Ni heroe ni traidor">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Ni heroe ni traidor</span><br />
+                                    1997
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body comment-devenu">
+                        <a href="fiche-comment-je-suis-devenu.html">
+                            <img src="images/comment-je-suis-devenu.jpg" alt="Comment je suis devenu un héro">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Comment je suis devenu un héros</span><br />
+                                    2020
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body im-not">
+                        <a href="fiche-iam-hero.html">
+                            <img src="images/i-am-hero.jpg" alt="I'm not a hero">
+                            <div class="movie-title">
+                                <p>
+                                    <span>I'am a hero</span><br />
+                                    2018
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body comment-devenu">
+                        <a href="fiche-comment-je-suis-devenu.html">
+                            <img src="images/comment-je-suis-devenu.jpg" alt="Comment je suis devenu un héros">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Comment je suis devenu un héros</span><br />
+                                    2020
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body christmas">
+                        <a href="fiche-a-christmas-hero.html">
+                            <img src="images/christmas-hero.jpg" alt="A christmas hero">
+                            <div class="movie-title">
+                                <p>
+                                    <span>A christmas hero</span><br />
+                                    2001
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 padding-0 movie-body halloween-hero">
+                        <a href="fiche-halloween-hero.html">
+                            <img src="images/halloween.jpg" alt="Halloween Hero">
+                            <div class="movie-title">
+                                <p>
+                                    <span>Halloween Hero</span><br />
+                                    2014
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="container container-footer">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <img class="logo" src="images/supracine-logo.png" alt="SupraCine">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <ul class="menu-footer">
+                            <li><a href="#">Plan du site</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
